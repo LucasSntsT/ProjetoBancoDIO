@@ -1,4 +1,3 @@
-import textwrap
 def menu():
     menu = """\n
     ================ MENU ================
@@ -10,7 +9,7 @@ def menu():
     [6]\tNovo usuário
     [7]\tSair
     => """
-    return input(textwrap.dedent(menu))
+    return input((menu))
 def depositar(saldo, valor, extrato, /):
     if valor > 0:
         saldo += valor
